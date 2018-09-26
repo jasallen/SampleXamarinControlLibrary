@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:sampleCustomControls"
+             x:Class="sampleCustomControls.MainPage"
+             xmlns:cc="clr-namespace:CustomControlsLibrary.Base;assembly=CustomControlsLibrary.Base"
+             >
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <!-- Place new controls here -->
+        <Button Text="Click Me!" 
+               HorizontalOptions="Center" Clicked="Button_Clicked" />
+
+        <cc:CustomPicker x:Name="thePicker" >
+            <cc:CustomPicker.Items>
+                <x:String>1</x:String>
+                <x:String>2</x:String>
+            </cc:CustomPicker.Items>
+        </cc:CustomPicker>
+
+    </StackLayout>
+
+</ContentPage>
